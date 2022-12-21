@@ -17,14 +17,7 @@
   font-family: 'Inter', sans-serif; 
 }
 
-body{
-  width: 100%;
-}
-
 section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
   min-width: 32rem;
 }
 
@@ -155,13 +148,6 @@ a{
   align-items: center;
 }
 
-/* .divpart1{
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: flex-start;
-} */
-
 .headerc{
   display: flex;
   justify-content: space-between;
@@ -211,7 +197,7 @@ a{
 
 .form1 input[type=text]{
   background-color: var(--color-frlk);
-  /* display: block; */
+  display: block; 
   min-width: 32rem;
   min-height: 6rem;
   border: 0;
@@ -221,9 +207,10 @@ a{
 }
 
 .form1 input[type=checkbox]{
-  position: absolute;
+  /* position: absolute;
   z-index: -1;
-  opacity: 0;
+  opacity: 0; */
+  position: relative;
 }
 
 .viewcheckbox{
@@ -283,10 +270,6 @@ p{
   margin-top: 0.2rem;
 }
 
-.sec1Boatloading{
-  display: flex;
-}
-
 .sec1pic{
   display: block;
   width: 51px;
@@ -294,9 +277,10 @@ p{
 }
 
 .sec1pic1{
-  /* margin-right: 0; */
+  display: block;
+  margin-left: auto;
+  margin-right: -1rem;
 }
-
 
 .sec2div{
   display: flex;
@@ -327,13 +311,17 @@ p{
   height: 99.4px;
 }
 
-
-.sec04{
+.sec4{
   background-color: var(--color-bg2);
   color: var(--color-text2);
   border: 3px solid rgba(53, 121, 244, 1);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  padding-bottom: 7rem;
+}
+
+.sec4p{
+  margin: 0;
 }
 
 footer{
@@ -342,17 +330,13 @@ footer{
   border: 3px solid rgba(24, 22, 45, 1);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  padding-top: 6rem;
   margin-top: -35px;
 }
 
 .footerpic1{
   width: 235px;
   height: 67px;
-}
-
-
-.footerul2{
-
 }
 
 ul{
@@ -389,7 +373,6 @@ nav{
   display: none;
 }
 
-
 @media (min-width: 1000px){  /* Когда становиться шире*/
 
   .versionPc{
@@ -408,6 +391,10 @@ nav{
   .headerpic1{
     width: 256px;
     height: 73.44px;
+  }
+
+  .sec1Boatloading{
+    display: flex;
   }
 
   /* SECTION 1 */
@@ -458,6 +445,12 @@ nav{
   .sec2pic3{
     width: 705px;
     height: 219px;
+  }
+
+  /* SECTION 4 */
+  .sec4pic2{
+    display: block;
+    align-self: center;
   }
 
   /* FOOTER */
