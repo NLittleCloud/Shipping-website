@@ -31,6 +31,9 @@ h1{
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 0.66em;
+}
+
+.h1-1{
   background-image: linear-gradient(to right, var(--color-bg3), var(--color-bg2) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -190,44 +193,45 @@ a{
 }
 
 .form1{
+  display: flex;
+  flex-direction: column;
   font-size: 1.6rem;
-  font-weight: 400;
-  /* display: flex; */
+  line-height: 167%;
+  padding: 3.5rem;
+  align-items: stretch;
+  max-width: 62rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+label{
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
 }
 
 ::placeholder {
   color: var(--color-text2);
 }
 
-.form1 input[type=text]{
+.form1 input[type=text], input[type=date], 
+input[type=email], input[type=password], input[type=tel]{
   background-color: var(--color-frlk);
   display: block; 
-  min-width: 32rem;
+  min-width: 22rem;
   min-height: 6rem;
   border: 0;
   border-radius: 1rem;
-  padding-left: 1.81em;
-  margin-bottom: 1.5rem;
+  padding: 0 1.81em;
+  margin-bottom: 1.5rem; 
 }
 
 .form1 input[type=checkbox]{
-  /* position: absolute;
-  z-index: -1;
-  opacity: 0; */
   position: relative;
-}
-
-.viewcheckbox{
-  position: absolute;
-  top: 61.2rem; 
-  width: 24px;
-  height: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .form1 textarea{
   background-color: var(--color-frlk);
-  /* display: block;  */
   min-width: 32rem;
   min-height: 10rem;
   border: 0;
@@ -370,6 +374,40 @@ ul{
   padding: 0;
 }
 
+.secformdiv{
+  margin-bottom: 4rem;
+}
+
+.formgender{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formp{
+  font-size: 23px;
+  margin: 0 auto;
+}
+
+.formp2{
+  font-size: 23px;
+  color: var(--color-bg2);
+  margin: 0 auto;
+}
+
+.formimg{
+  display: block;
+  margin-left: auto;
+  width: 378.57px;
+  height: 240.4px;
+}
+
+.labelgn{
+  flex-direction: row;
+  margin-top: 3px;
+}
+
 /* /////////////////////////////////////// */
  .navul{
   display: flex;
@@ -399,13 +437,48 @@ nav{
   display: none;
 }
 
+::selection{
+  color: var(--color-bg2);;
+  text-shadow: 1px 0 1px var(--color-bg3), 0 1px 1px var(--color-bg3);
+}
+
+.b01,.headersocial,.li2{
+  transition: 0.5s;
+}
+
+.b01:hover {
+  transform: scale(1.1);
+}
+
+.b01:active{
+  transform: scale(0.9);
+}
+
+.headersocial:active{
+  transform: scale(0.9);
+}
+
+.headersocial:hover{
+  transform: scale(1.1);
+}
+
+.li2:active{
+  box-shadow: inset -4px 4px 16px rgb(0, 0, 0, 0.1);
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+
+
 @media (min-width: 800px){
 
   .versionPc{
     display: block;
   }
 
-  .sec1pic1, .headernav, .headersocial, .sec4pic2{ 
+  .sec1pic1, .headernav, .headersocial, .sec4pic2, .formp3{ 
     display: none;
   }
 
@@ -434,6 +507,19 @@ nav{
     width: 480px;
     height: 149.1px;
   }
+
+  .sec1Form{
+    display: flex;
+  }
+
+  .formp, .formp2{
+    font-size: 2.7rem;
+  }
+
+  .formimg{
+    width: 530px;
+    height: 336.6px;
+  }
 }
 
 @media (min-width: 1200px){  /* Когда становиться шире*/
@@ -458,6 +544,10 @@ nav{
   }
 
   .sec1Boatloading{
+    display: flex;
+  }
+
+  .sec1Form{
     display: flex;
   }
 
@@ -545,5 +635,24 @@ nav{
   .footerul1{
     margin: 0;
   }
+  
+  .formp, .formp2{
+    font-size: 3.8rem;
+  }
 
+  .formp3{
+    display: block;
+  }
+
+  .formimg{
+    width: 530px;
+    height: 336.6px;
+  }
+
+}
+
+@media (max-width: 400px){
+  .formimg{
+    display: none;
+  }
 }

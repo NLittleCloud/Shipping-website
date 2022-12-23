@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Main page - MDA Shipping</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+    <div class = "headerc wrapper">
+      <div class = "headerleft">
+        <div><a href="index.html"><img class = "headerpic1" src="img/LogoD.svg" alt="На главную" width="184px" height="53px"></a></div>
+        <div class = "headerbtd"><button class = "headerbt versionMb"><img src="img/Menu.svg" alt="Меню"></button></div>
+        <nav class = "headernav versionPc">
+          <ul class = "navul">
+            <li class = "linav"><a href="#">HOME</a></li>
+            <li class = "linav"><a href="#">SERVICES</a></li>
+            <li class = "linav"><a href="#">CONTACTS</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class = "headersocial versionPc">
+        <a href="#"><img src="img/TelegrammD.svg" alt="Telegram"></a>
+        <a href="#"><img src="img/WhatsAppD.svg" alt="WhatsApp"></a>
+      </div>
+    </div>
+  </header>
+	<main>
+		<section class = "sec1Form wrapper">
+			<div class = "secformdiv">
+				<p class = "formp">Worldwide multimodal logistics and warehousing</p>
+				<a class = "formp2">services for all types of vehicles</a>
+				<p class = "formp3">We ship FCL/LCL from the USA around the world.</p>
+			</div>
+			<img class = "formimg" src="img/car.png" alt="картинка" width="530" height="336.6">
+		</section>
+
+		<section class = "sec4">
+			<div>
+				<form class = "form1" method="POST" name="contact">
+					<input type="hidden" name="form-name" value="contact">
+					<h2 class = "h2-2">User data</h2>
+					<p class="p03">Registration in the MDA shipping will allow you to be a full-fledged member of the portal.</p>
+
+					<label>Name:<input type="text" placeholder="Your name" name="Name" required=""></label>
+					<label>Surname:<input type="text" placeholder="Your surname" name="Surname"></label>
+					<label>Date or birth:<input type="date" name="Birthday" required=""></label>
+
+					<p>Gender:</p>
+          <div class="formgender">
+            <label class = "labelgn">Man:<input type="radio" value="Man" name="Gender"></label>
+            <label class = "labelgn">Woman:<input type="radio" value="Woman" name="Gender"></label>
+          </div>
+
+          <label>Password:<input minlength="8" type="password" placeholder="Password" name="Password" required=""></label>
+          <h2 class = "h2-2">Contact information</h2>
+          <label>Email:<input type="email" placeholder="email@address.com" name="Email" required=""></label>
+          <label>Phone number:<input type="tel" placeholder="+7 (9XX) XXX-XXXX" name="Number" required=""></label>
+          <label>Сonvenient interval for communication:<input type="text" placeholder="Morning, day, evening, night" name="Time"></label>
+          <button class="b01" type="submit">Send</button>
+          <button class="b01" type="reset">Remove form</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer>
+    <div class = "footerdiv wrapper">
+      <a href="#"><img class = "footerpic1" src="img/LogoL.svg" alt="На главную"></a>
+      <ul class = "footerul1">
+        <li class = "li3"><a class = "a01" href="#">HOME</a></li>
+        <li class = "li3"><a class = "a01" href="#">SERVICES</a></li>
+        <li class = "li3"><a class = "a01" href="#">CONTACTS</a></li>
+      </ul>
+      <ul>
+        <li class = "li3">
+          <a class = "a01" href="#"><img src="img/WhatsAppL.svg" alt="WhatsApp"></a>
+          <a class = "a01" href="#"><img src="img/TelegrammL.svg" alt="Telegram"></a>
+        </li>
+        <li class = "li3"><a class = "a01" href="tel:">+1 912 000 0000</a></li>
+        <li class = "li3"><a class = "a01" href="mailto:">info@cargo.us</a></li>
+      </ul>
+    </div>
+    <p class = "wrapper footerp">Copyright © 2022 Cargo.All Rights reserved.</p>
+  </footer>
+</body>
