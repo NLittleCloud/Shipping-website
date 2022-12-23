@@ -29,8 +29,11 @@ h1{
   font-size: 3.8rem;
   font-family: 'Mulish', sans-serif;
   font-weight: 600;
-  line-height: 1.1;
+  line-height: 1.5;
   margin-bottom: 0.66em;
+  background-image: linear-gradient(to right, var(--color-bg3), var(--color-bg2) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2{
@@ -153,6 +156,7 @@ a{
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5.2rem;
+  margin-top: 2.7rem;
 }
 
 .headerbt{
@@ -324,6 +328,12 @@ p{
   margin: 0;
 }
 
+.sec4pic1{
+  display: block;
+  margin-left: auto;
+  margin-right: -1rem;
+}
+
 footer{
   background-color: var(--color-bg3);
   color: var(--color-text2);
@@ -335,8 +345,24 @@ footer{
 }
 
 .footerpic1{
+  margin-bottom: 6.4rem;
   width: 235px;
   height: 67px;
+}
+
+.footerul1{
+  margin-bottom: 8.7rem;
+}
+
+.footerp{
+  color: var(--color-textbt);
+  margin-top: 11.2rem;
+}
+
+.footerdiv{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 ul{
@@ -373,7 +399,44 @@ nav{
   display: none;
 }
 
-@media (min-width: 1000px){  /* Когда становиться шире*/
+@media (min-width: 800px){
+
+  .versionPc{
+    display: block;
+  }
+
+  .sec1pic1, .headernav, .headersocial, .sec4pic2{ 
+    display: none;
+  }
+
+  .sec1Boatloading{
+    display: flex;
+    align-items: center;
+  }
+
+  .sec1pic2{
+    width: 374px;
+    height: 336.44px;
+  }
+
+  /* SECTION 2 */
+  .sec2pic1{
+    width: 480px;
+    height: 180.42px;
+  }
+
+  .sec2pic2{
+    width: 480px;
+    height: 180.42px;
+  }
+  
+  .sec2pic3{
+    width: 480px;
+    height: 149.1px;
+  }
+}
+
+@media (min-width: 1200px){  /* Когда становиться шире*/
 
   .versionPc{
     display: block;
@@ -386,6 +449,7 @@ nav{
   /* HEADER */
   .headerleft{
     width: 60%;
+    margin-top: 2.7rem;
   }
 
   .headerpic1{
@@ -401,6 +465,11 @@ nav{
   .sec1pic{
     width: 70px;
     height: 70px;
+  }
+  
+  .sec1pic2{
+    width: 685px;
+    height: 534px;
   }
 
   .div1{
@@ -459,8 +528,22 @@ nav{
     height: 77.55px;
   }
 
-  .footerul1{
+  .footerdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .li3{
     text-align: left;
+  }
+
+  .footerpic1{
+    margin: 0;
+  }
+  .footerul1{
+    margin: 0;
   }
 
 }
