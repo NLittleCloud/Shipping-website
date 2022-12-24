@@ -18,7 +18,15 @@
 }
 
 section {
+  overflow-x: hidden;
   min-width: 32rem;
+}
+
+html, body { height: 100%;}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
 }
 
 header{
@@ -81,14 +89,15 @@ hr{
 
 .b01{
   display: block;
+  font-size: 1.2rem;
   font-weight: 700; 
   color: var(--color-textbt);
   background-color: var(--color-bt);
   border: 0;
   border-radius: 10px;
   padding: 1.25em 5.56em;
-  height: 6rem;
-  min-width: 320px;
+  min-height: 6rem;
+  /* min-width: 320px; */
   margin-top: 2.18em; 
 }
 
@@ -101,7 +110,6 @@ li{
 
 .li1{
   height: 9rem;
-  flex-basis: 130 px;
 }
 
 .li2{
@@ -218,7 +226,7 @@ label{
 input[type=email], input[type=password], input[type=tel]{
   background-color: var(--color-frlk);
   display: block; 
-  min-width: 22rem;
+  /* min-width: 22rem; */
   min-height: 6rem;
   border: 0;
   border-radius: 1rem;
@@ -232,7 +240,7 @@ input[type=email], input[type=password], input[type=tel]{
 
 .form1 textarea{
   background-color: var(--color-frlk);
-  min-width: 32rem;
+  /* min-width: 32rem; */
   min-height: 10rem;
   border: 0;
   border-radius: 1rem;
@@ -303,18 +311,21 @@ p{
 
 .sec2pic1{
   align-self: center;
+  margin: 0 16px;
   width: 320px;
   height: 120.28px;
 }
 
 .sec2pic2{
   align-self: center;
+  margin: 0 16px;
   width: 320px;
   height: 123.91px;
 }
 
 .sec2pic3{
   align-self: center;
+  margin: 0 16px;
   width: 320px;
   height: 99.4px;
 }
@@ -454,6 +465,10 @@ nav{
   transform: scale(0.9);
 }
 
+.b01:focus{
+  box-shadow: -12px 12px 32px rgb(0, 0, 0, 1);
+}
+
 .headersocial:active{
   transform: scale(0.9);
 }
@@ -463,11 +478,15 @@ nav{
 }
 
 .li2:active{
-  box-shadow: inset -4px 4px 16px rgb(0, 0, 0, 0.1);
+  box-shadow: inset -6px 6px 18px rgb(0, 0, 0, 0.2);
 }
 
 a:hover{
   text-decoration: underline;
+}
+
+a:focus{
+  color: var(--color-bg2);
 }
 
 
